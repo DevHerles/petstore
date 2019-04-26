@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="ChartWidget">
+        <div>
+            <t t-foreach="widget.data" t-as="product">
+                <div class="col-xs-4">
+                    <div class="panel panel-primary" style="background-color:#eef0f0;">
+                        <div class = "panel-heading">
+                            <h3 class = "panel-title"><t t-esc="product"/></h3>
+                        </div>
+                        <div class="panel-body">
+                            <t t-esc="widget.color"/>
+                            <div id="myPie"></div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+            <br/>
+        </div>
+    </t>
+    <t t-name="AppointmentDashboardView">
+        <div style="background-color: red;">:) This is some simple HTML</div>
+    </t>
+</templates>
